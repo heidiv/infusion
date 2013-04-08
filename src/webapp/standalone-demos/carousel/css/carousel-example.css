@@ -1,0 +1,19 @@
+.fl-uiOptions-fatPanel {
+    overflow-x: hidden;
+    height: 12em;
+}
+
+.fl-uiOptions-fatPanel ul.fl-uiOptions-panels {
+    width: 100%;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.fl-uiOptions-carousel {
+   float:left;
+}
+
+button.fl-scroll-arrow {
+    float:left;
+    font-weight: bold;
+}

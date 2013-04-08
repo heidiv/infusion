@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <title>Carousel</title>
+
+        <link type="text/css" href="../../../components/uiOptions/css/FatPanelUIOptionsFrame.css" rel="stylesheet" />
+        <script type="text/javascript" src="../../../lib/jquery/core/js/jquery.js"></script>
+        <script type="text/javascript" src="../../../lib/jquery/plugins/jCarouselLite/js/jcarousellite_1.0.1.min.js"></script>                          
+        <link type="text/css" href="../css/carousel-example.css" rel="stylesheet" />
+
+    </head>
+    <body>
+    <div class="fl-uiOptions-fatPanel">
+        <button class="fl-scroll-arrow prev"><<</button>
+        <div class="fl-uiOptions-carousel">    
+            <ul class="fl-uiOptions-panels">     
+                <li class="fl-uiOptions-panel"><div class="flc-uiOptions-text-sizer">text</div></li> 
+                <li class="fl-uiOptions-panel"><div class="flc-uiOptions-text-font">font</div></li> 
+                <li class="fl-uiOptions-panel"><div class="flc-uiOptions-line-spacer">line</div></li> 
+                <li class="fl-uiOptions-panel"><div class="flc-uiOptions-contrast">contrast</div></li> 
+                <li class="fl-uiOptions-panel"><div class="flc-uiOptions-layout-controls">layout</div></li>   
+                <li class="fl-uiOptions-panel"><div class="flc-uiOptions-links-controls">links</div></li>         
+            </ul>
+        </div>     
+        <button class="fl-scroll-arrow next">>>></button>                   
+        
+        <script type="text/javascript">
+            /*$(".fl-uiOptions-panels").accessibleCarousel({
+                animationSpeed:300 
+                // Defines the time (in milliseconds) the animation takes to switch between the items
+            });*/
+            $(".fl-uiOptions-carousel").jCarouselLite({
+                btnNext: ".next",
+                btnPrev: ".prev",
+                mouseWheel: true
+            });                       
+        </script>
+    </div>    
+    </body>
+</html>
