@@ -7,33 +7,31 @@
         <link type="text/css" href="../../../components/uiOptions/css/FatPanelUIOptionsFrame.css" rel="stylesheet" />
         <script type="text/javascript" src="../../../lib/jquery/core/js/jquery.js"></script>
         <script type="text/javascript" src="../../../lib/jquery/plugins/jCarouselLite/js/jcarousellite_1.0.1.min.js"></script>                          
+        <script type="text/javascript" src="../../../lib/jquery/plugins/mousewheel/js/jquery.mousewheel.js"></script>                          
         <link type="text/css" href="../css/carousel-example.css" rel="stylesheet" />
 
     </head>
     <body>
     <div class="fl-uiOptions-fatPanel">
-        <button class="fl-scroll-arrow prev"><<</button>
+        <button class="fl-scroll-arrow prev" tabindex="-1"><< Previous</button>
         <div class="fl-uiOptions-carousel">    
             <ul class="fl-uiOptions-panels">     
-                <li class="fl-uiOptions-panel"><div class="flc-uiOptions-text-sizer">text</div></li> 
-                <li class="fl-uiOptions-panel"><div class="flc-uiOptions-text-font">font</div></li> 
-                <li class="fl-uiOptions-panel"><div class="flc-uiOptions-line-spacer">line</div></li> 
-                <li class="fl-uiOptions-panel"><div class="flc-uiOptions-contrast">contrast</div></li> 
-                <li class="fl-uiOptions-panel"><div class="flc-uiOptions-layout-controls">layout</div></li>   
-                <li class="fl-uiOptions-panel"><div class="flc-uiOptions-links-controls">links</div></li>         
+                <li class="fl-uiOptions-panel"><a href="#">text</a></li> 
+                <li class="fl-uiOptions-panel"><a href="#">font</a></li> 
+                <li class="fl-uiOptions-panel"><a href="#">lines</a></li> 
+                <li class="fl-uiOptions-panel"><a href="#">contrast</a></li> 
+                <li class="fl-uiOptions-panel"><a href="#">layout</a></li>   
+                <li class="fl-uiOptions-panel"><a href="#">links</a></li>         
             </ul>
         </div>     
-        <button class="fl-scroll-arrow next">>>></button>                   
+        <button class="fl-scroll-arrow next" tabindex="-1">Next >></button>                   
         
         <script type="text/javascript">
-            /*$(".fl-uiOptions-panels").accessibleCarousel({
-                animationSpeed:300 
-                // Defines the time (in milliseconds) the animation takes to switch between the items
-            });*/
             $(".fl-uiOptions-carousel").jCarouselLite({
                 btnNext: ".next",
                 btnPrev: ".prev",
-                mouseWheel: true
+                mouseWheel: true,
+                circular: false
             });                       
         </script>
     </div>    
