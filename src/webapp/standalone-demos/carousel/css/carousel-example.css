@@ -8,6 +8,9 @@
     padding-left: 2em;
     padding-right: 2em;
 }
+.fl-uiOptions-fatPanel ul.fl-uiOptions-panels li.fl-uiOptions-panel {
+    min-width: 20em;
+}
 
 .fl-uiOptions-carousel {
    float:left;
