@@ -101,6 +101,13 @@ var fluid_1_5 = fluid_1_5 || {};
                         }
                     }
                 }
+            },
+            carousel: {
+                type: "fluid.carousel",
+                container: "{fatPanel}.container",
+                options: {
+                    animation: "500"
+                }
             }
         },
         // TODO: This material is not really transformation, but would be better expressed by
@@ -246,6 +253,7 @@ var fluid_1_5 = fluid_1_5 || {};
         });
         fatPanel.slidingPanel.events.onPanelShow.addListener(function () {
             fatPanel.iframeRenderer.iframe.show();
+            //fatPanel.carousel.makeCarousel();
         });
     };
 
@@ -263,5 +271,25 @@ var fluid_1_5 = fluid_1_5 || {};
         // react synchronously to being shown
         setTimeout(callback, 1);
     };
+    
+    
+    /**
+     * Simple component cover for the jQuery ui jcarousel plugin. 
+     *
+     * @param {jQueryable} element the element to make a carousel
+     * @param {Object} options for the component
+     * @return the carousel component
+     */ 
+     
+    fluid.defaults("fluid.carousel", {
+        gradeNames: ["fluid.viewComponent", "autoInit"],
+        invokers: {
+            makeCarousel: {
+                "this": "{that}.container",
+                method: "jcarousel",
+                args: "{arguments}.0"
+            }
+        }
+    });    
     
 })(jQuery, fluid_1_5);
