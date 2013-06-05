@@ -1,0 +1,6 @@
+{"carousel": {
+      "name": "Carousel",
+       "description": "A wrapper for the jquery ui carousel",
+    "files": ["Carousel.js"],
+    "dependencies": ["jQuery", "jQueryUICore", "jCarouselPlugin", "framework"]
+}}
