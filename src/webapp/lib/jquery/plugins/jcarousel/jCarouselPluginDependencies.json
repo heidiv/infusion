@@ -1,0 +1,14 @@
+{
+    "jCarouselPlugin": {
+        "name": "jCarousel Plugin",
+        "description": "jCarousel is a jQuery plugin for controlling a list of items in horizontal or vertical order.",
+        "cssFiles": "jcarousel.css",
+        "files": [
+            "jquery.jcarousel.js" 
+        ],
+        "dependencies": [
+            "jQuery",
+            "jQueryUICore" 
+        ] 
+    }
+}
