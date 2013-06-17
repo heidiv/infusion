@@ -36,11 +36,8 @@
             "tableOfContents",
             "json",
             "jQueryAriaTabsPlugin",
-<<<<<<< HEAD
-            "jCarousel"
-=======
-            "jQueryTouchPunchPlugin"
->>>>>>> master
+            "jQueryTouchPunchPlugin",
+            "jCarousel"            
         ]
     }
 }

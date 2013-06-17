@@ -134,17 +134,12 @@ var fluid_1_5 = fluid_1_5 || {};
                         }
                     },
                     components: {
-<<<<<<< HEAD
                         iframeRenderer: "{fatPanel}.iframeRenderer",
-                        settingsStore: "{uiEnhancer}.settingsStore",
                         carousel: { 
                             type: "fluid.carousel",
                             container: "{that}.container",
                             createOnEvent: "onUIOptionsMarkupReady"
                         }
-=======
-                        iframeRenderer: "{fatPanel}.iframeRenderer"
->>>>>>> master
                     }
                 }
             }
