@@ -20,8 +20,16 @@ var fluid_1_5 = fluid_1_5 || {};
 (function ($, fluid) {
     fluid.registerNamespace("fluid.carousel");
     
-    fluid.carousel.setup = function (panels, carouselOptions, callback) {
-        panels.jcarousel(carouselOptions);
+    fluid.carousel.setup = function (carousel, prevControl, nextControl, carouselOptions, callback) {
+        carousel.jcarousel(carouselOptions);
+        
+        prevControl.jcarouselControl({
+            target: '-=1'
+        });
+
+        nextControl.jcarouselControl({
+            target: '+=1'
+        });        
         callback();
     }
     
@@ -34,17 +42,19 @@ var fluid_1_5 = fluid_1_5 || {};
             onCreate: "{that}.setup"
        },
        selectors: {
-            panels: ".flc-carousel-panels"
+            carousel: ".flc-carousel",
+            prevControl: ".flc-carousel-prev",
+            nextControl: ".flc-carousel-next"
        }, 
        markup: {
-           nextHtml: "<div>>>></div>",
-           prevHtml: "<div><<<</div>"     
+           nextHtml: '<div class="fl-icon-next fl-carousel-arrow" role="img" aria-label="Next arrow"></div>',
+           prevHtml: '<div class="fl-icon-prev fl-carousel-arrow" role="img" aria-label="Previous arrow"></div>'     
        },
        panelsVisible: "4",
        invokers: {
             setup: {
                 funcName: "fluid.carousel.setup",
-                args: ["{that}.dom.panels", { visible:"{that}.options.panelsVisible", buttonNextHTML:"{that}.options.markup.nextHtml", buttonPrevHTML:"{that}.options.markup.prevHtml" }, "{that}.events.onReady.fire"]
+                args: ["{that}.dom.carousel", "{that}.dom.prevControl", "{that}.dom.nextControl", { }, "{that}.events.onReady.fire"]
             }
        }
     });

@@ -133,6 +133,68 @@ html {
     content: "\e002";
 }
 
+/* Carousel */
+.fl-uiOptions-fatPanel .fl-carousel {
+    position: relative;
+    overflow: hidden;
+    min-height: 11em;
+}
+
+.fl-uiOptions-fatPanel .fl-carousel ul {
+    width: 20000em;
+    position: absolute;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.fl-uiOptions-fatPanel .fl-carousel li {
+    float: left;
+}
+
+.fl-uiOptions-fatPanel .fl-carousel-arrow-bg {
+	position: absolute;
+    top: 0;
+	background-color: #000000;
+	padding: 1em;
+    opacity: 0.3;
+    z-index: 1;
+    height: 12em;
+}
+.fl-uiOptions-fatPanel .fl-carousel-arrow-bg-left {
+    left: 0;
+	background-color: #000000;
+	padding: 1em;
+}
+.fl-uiOptions-fatPanel .fl-carousel-arrow-bg-right {
+    right: 0;
+	background-color: #000000;
+	padding: 1em;
+}
+
+.fl-uiOptions-fatPanel .fl-carousel-arrow {
+	color: yellow;
+	padding: 1em;
+	background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 2em; 
+    z-index: 2;   	
+}
+.fl-uiOptions-fatPanel .fl-carousel-arrow {
+	color: yellow;
+	padding: 1em;
+	background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 2em; 
+    z-index: 2; 
+	position:absolute;
+	top: 2.75em;      	
+}
+.fl-uiOptions-fatPanel .fl-carousel-arrow-left {
+	left: -1em;
+}
+
+.fl-uiOptions-fatPanel .fl-carousel-arrow-right {
+	right: -1em;
+}
 /* Theming */
 .fl-uiOptions-fatPanel.fl-theme-bw,
 .fl-uiOptions-fatPanel.fl-theme-wb,
