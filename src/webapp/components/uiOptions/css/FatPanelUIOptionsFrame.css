@@ -54,12 +54,13 @@ html {
     box-shadow: 2px 2px #7a766d;
     display: inline-block;
     padding: 1em;
-    min-height: 9.6em;
-    width: 25em;
+    min-height: 10.5em;
+    width: 24em;
     background-color: #fff;
     margin-right: 10px;
     white-space: normal;
     vertical-align:middle;
+    float:left;
  }
 
 .fl-uiOptions-fatPanel h2 {
@@ -137,7 +138,8 @@ html {
 .fl-uiOptions-fatPanel .fl-carousel {
     position: relative;
     overflow: hidden;
-    min-height: 12em;
+    min-height: 13em;
+    width: 100%;
 }
 
 .fl-uiOptions-fatPanel .fl-carousel ul {
@@ -148,9 +150,9 @@ html {
     padding: 0;
 }
 
-.fl-uiOptions-fatPanel .fl-carousel li {
+/*.fl-uiOptions-fatPanel .fl-carousel li {
     float: left;
-}
+}*/
 
 .fl-uiOptions-fatPanel .fl-carousel-arrow-bg {
 	position: absolute;
