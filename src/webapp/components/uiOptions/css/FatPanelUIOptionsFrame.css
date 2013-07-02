@@ -137,7 +137,7 @@ html {
 .fl-uiOptions-fatPanel .fl-carousel {
     position: relative;
     overflow: hidden;
-    min-height: 11em;
+    min-height: 12em;
 }
 
 .fl-uiOptions-fatPanel .fl-carousel ul {
